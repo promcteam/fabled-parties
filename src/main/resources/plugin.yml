@@ -1,8 +1,8 @@
 name: ${project.name}
-main: com.promcteam.fabled.parties.FabledParties
+main: studio.magemonkey.fabled.parties.FabledParties
 version: ${project.version}
 api-version: 1.16
-authors: [ Eniripsa96, Sentropic, ProMCTeam ]
+authors: [ Eniripsa96, Sentropic, Mage Monkey Studios ]
 depend: [ Fabled ]
 softdepend: [ Instances, PlaceholderAPI ]
 

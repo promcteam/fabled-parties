@@ -1,5 +1,5 @@
-[![Build](https://github.com/promcteam/fabled-parties/actions/workflows/release.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/releases/com/promcteam/fabled-parties/1.0.0-R0.1-SNAPSHOT)
-[![Build](https://github.com/promcteam/fabled-parties/actions/workflows/devbuild.yml/badge.svg?branch=dev)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/promcteam/fabled-parties/1.0.0-R0.1-SNAPSHOT)
+[![Build](https://github.com/promcteam/fabled-parties/actions/workflows/release.yml/badge.svg?branch=main)](https://s01.oss.sonatype.org/content/repositories/releases/studio/magemonkey/fabled-parties/1.0.0-R0.1-SNAPSHOT)
+[![Build](https://github.com/promcteam/fabled-parties/actions/workflows/devbuild.yml/badge.svg?branch=dev)](https://s01.oss.sonatype.org/content/repositories/snapshots/studio/magemonkey/fabled-parties/1.0.0-R0.1-SNAPSHOT)
 
 # FabledParties
 
@@ -13,7 +13,7 @@ or snapshots through Sonatype.
 </repository>
 ...
 <dependency>
-    <groupId>com.promcteam</groupId>
+    <groupId>studio.magemonkey</groupId>
     <artifactId>fabled-parties</artifactId>
     <version>1.0.0-R0.1-SNAPSHOT</version>
 </dependency>
