@@ -16,7 +16,7 @@ new-leader-on-dc: true
 # Whether members of the same party can hurt each other
 friendly-fire: true
 
-# Whether party members are considered allies in ProSkillAPI
+# Whether party members are considered allies in Fabled
 party-ally: true
 
 # Whether to use the scoreboard for
