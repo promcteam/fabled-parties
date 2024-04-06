@@ -67,9 +67,6 @@ public abstract class MockedTest {
                     return classMock;
                 });
         assertEquals(5, Server.getLevel(UUID.randomUUID()));
-
-//        MockBukkit.loadJar(DependencyResolver.resolve("studio.magemonkey:promccore:1.0.3.10-SNAPSHOT"));
-//        MockBukkit.loadJar(DependencyResolver.resolve("studio.magemonkey:proskillapi:1.1.7.18-SNAPSHOT"));
     }
 
     @AfterAll
