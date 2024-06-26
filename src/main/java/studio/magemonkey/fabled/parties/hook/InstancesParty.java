@@ -153,14 +153,14 @@ public class InstancesParty implements IParty {
 
         // Member modifier
         amount = amount / (1 + (reachedPlayers.size() - 1) * plugin.getMemberModifier());
-        PlayerData  data  = Fabled.getPlayerData(source);
+        PlayerData  data  = Fabled.getData(source);
         PlayerClass main  = data.getMainClass();
         int         level = main == null ? 0 : main.getLevel();
 
         // Grant exp to all members
         for (Player member : reachedPlayers) {
             // Player must be online
-            PlayerData info = Fabled.getPlayerData(member);
+            PlayerData info = Fabled.getData(member);
             main = info.getMainClass();
             int lvl = main == null ? 0 : main.getLevel();
             int exp;

@@ -1,11 +1,11 @@
 package studio.magemonkey.fabled.parties.inject;
 
-import studio.magemonkey.fabled.Fabled;
-import studio.magemonkey.fabled.api.player.PlayerClass;
-import studio.magemonkey.fabled.api.player.PlayerData;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
+import studio.magemonkey.fabled.Fabled;
+import studio.magemonkey.fabled.api.player.PlayerClass;
+import studio.magemonkey.fabled.api.player.PlayerData;
 
 import java.util.UUID;
 
@@ -19,7 +19,7 @@ import java.util.UUID;
 public class Server {
 
     public static PlayerData getPlayerData(Player player) {
-        return Fabled.getPlayerData(player);
+        return Fabled.getData(player);
     }
 
     public static PlayerClass getClass(Player player) {
