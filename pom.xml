@@ -5,18 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.promcteam</groupId>
-        <artifactId>promc-parent</artifactId>
-        <version>1.20.4-SNAPSHOT</version>
+        <groupId>studio.magemonkey</groupId>
+        <artifactId>magemonkey-parent</artifactId>
+        <version>1.21-SNAPSHOT</version>
     </parent>
 
-    <artifactId>proskillapiparties</artifactId>
-    <version>1.1.0-R0.4-SNAPSHOT</version>
+    <artifactId>fabled-parties</artifactId>
+    <version>1.0.0-R0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>ProSkillAPIParties</name>
-    <description>A Parties extension for ProSkillAPI</description>
-    <url>https://github.com/promcteam/proskillapiparties</url>
+    <name>FabledParties</name>
+    <description>A Parties extension for Fabled</description>
+    <url>https://github.com/promcteam/fabled-parties</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +24,6 @@
     </properties>
 
     <build>
-        <directory>${java.io.tmpdir}/maven-target/</directory>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -60,20 +59,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.seeseemelk</groupId>
-            <artifactId>MockBukkit-v1.20</artifactId>
+            <groupId>studio.magemonkey</groupId>
+            <artifactId>codex</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.promcteam</groupId>
-            <artifactId>promccore</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.promcteam</groupId>
-            <artifactId>proskillapi</artifactId>
+            <groupId>studio.magemonkey</groupId>
+            <artifactId>fabled</artifactId>
         </dependency>
         <dependency>
             <groupId>org.cyberiantiger.minecraft</groupId>
@@ -82,22 +73,12 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/instances-1.24.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>23.0.0</version>
-            <scope>provided</scope>
-        </dependency>
 
         <dependency>
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
             <version>2.11.2</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
 
         <!-- Test Dependencies -->
@@ -108,10 +89,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-reload4j</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -126,15 +103,15 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <url>https://www.opensource.org/licenses/mit-license.php</url>
         </license>
     </licenses>
 
     <developers>
         <developer>
-            <name>ProMCTeam</name>
-            <organization>ProMCTeam</organization>
-            <organizationUrl>https://promcteam.com</organizationUrl>
+            <name>MageMonkeyStudio</name>
+            <organization>MageMonkeyStudio</organization>
+            <organizationUrl>https://magemonkey.studio</organizationUrl>
         </developer>
     </developers>
 
