@@ -1,10 +1,5 @@
 package studio.magemonkey.fabled.parties;
 
-import studio.magemonkey.fabled.parties.hook.Hooks;
-import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
-import studio.magemonkey.fabled.api.DefaultCombatProtection;
-import studio.magemonkey.fabled.api.enums.ExpSource;
-import studio.magemonkey.fabled.api.event.PlayerExperienceGainEvent;
 import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.*;
@@ -26,6 +21,11 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.projectiles.ProjectileSource;
+import studio.magemonkey.fabled.api.DefaultCombatProtection;
+import studio.magemonkey.fabled.api.enums.ExpSource;
+import studio.magemonkey.fabled.api.event.PlayerExperienceGainEvent;
+import studio.magemonkey.fabled.parties.hook.Hooks;
+import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
 
 import java.util.Objects;
 

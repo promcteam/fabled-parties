@@ -1,12 +1,5 @@
 package studio.magemonkey.fabled.parties;
 
-import be.seeseemelk.mockbukkit.entity.PlayerMock;
-import studio.magemonkey.fabled.parties.testutil.MockedTest;
-import studio.magemonkey.fabled.parties.event.PartyExpEvent;
-import studio.magemonkey.fabled.parties.event.PlayerJoinPartyEvent;
-import studio.magemonkey.fabled.parties.event.PlayerLeavePartyEvent;
-import studio.magemonkey.fabled.api.enums.ExpSource;
-import studio.magemonkey.fabled.api.player.PlayerData;
 import lombok.extern.log4j.Log4j2;
 import org.bukkit.ChatColor;
 import org.bukkit.event.player.PlayerQuitEvent;
@@ -14,13 +7,18 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockbukkit.mockbukkit.entity.PlayerMock;
+import studio.magemonkey.fabled.api.enums.ExpSource;
+import studio.magemonkey.fabled.api.player.PlayerData;
+import studio.magemonkey.fabled.parties.event.PartyExpEvent;
+import studio.magemonkey.fabled.parties.event.PlayerJoinPartyEvent;
+import studio.magemonkey.fabled.parties.event.PlayerLeavePartyEvent;
+import studio.magemonkey.fabled.parties.testutil.MockedTest;
 
 import static org.mockito.Mockito.verify;
 
 @Log4j2
 public class PartyTest extends MockedTest {
-
-
     private PlayerMock partyLeader, partyMember;
 
     @BeforeEach

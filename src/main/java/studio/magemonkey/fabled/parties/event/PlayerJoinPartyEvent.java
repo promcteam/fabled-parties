@@ -1,11 +1,11 @@
 package studio.magemonkey.fabled.parties.event;
 
-import studio.magemonkey.fabled.parties.Party;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
+import studio.magemonkey.fabled.parties.Party;
 
 /**
  * Called when a player joins an existing party

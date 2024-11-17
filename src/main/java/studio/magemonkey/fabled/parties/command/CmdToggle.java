@@ -1,14 +1,14 @@
 package studio.magemonkey.fabled.parties.command;
 
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import studio.magemonkey.codex.mccore.commands.ConfigurableCommand;
 import studio.magemonkey.codex.mccore.commands.IFunction;
 import studio.magemonkey.fabled.parties.FabledParties;
 import studio.magemonkey.fabled.parties.Party;
 import studio.magemonkey.fabled.parties.lang.ErrorNodes;
 import studio.magemonkey.fabled.parties.lang.IndividualNodes;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.Plugin;
 
 /**
  * Command to toggle party chat

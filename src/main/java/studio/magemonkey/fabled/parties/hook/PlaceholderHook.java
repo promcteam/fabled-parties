@@ -1,13 +1,13 @@
 package studio.magemonkey.fabled.parties.hook;
 
-import studio.magemonkey.fabled.parties.FabledParties;
-import studio.magemonkey.fabled.parties.IParty;
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import studio.magemonkey.fabled.parties.FabledParties;
+import studio.magemonkey.fabled.parties.IParty;
 
 public class PlaceholderHook extends PlaceholderExpansion {
     private final FabledParties plugin;

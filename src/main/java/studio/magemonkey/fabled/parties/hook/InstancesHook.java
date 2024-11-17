@@ -26,11 +26,11 @@
  */
 package studio.magemonkey.fabled.parties.hook;
 
-import studio.magemonkey.fabled.parties.FabledParties;
-import studio.magemonkey.fabled.parties.IParty;
 import org.bukkit.entity.Player;
 import org.cyberiantiger.minecraft.instances.Instances;
 import org.cyberiantiger.minecraft.instances.Party;
+import studio.magemonkey.fabled.parties.FabledParties;
+import studio.magemonkey.fabled.parties.IParty;
 
 import java.util.HashMap;
 import java.util.Map;

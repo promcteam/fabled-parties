@@ -1,11 +1,11 @@
 package studio.magemonkey.fabled.parties.mccore;
 
+import org.bukkit.entity.Player;
 import studio.magemonkey.codex.mccore.scoreboard.BoardManager;
 import studio.magemonkey.codex.mccore.scoreboard.PlayerBoards;
 import studio.magemonkey.codex.mccore.scoreboard.StatBoard;
 import studio.magemonkey.fabled.parties.FabledParties;
 import studio.magemonkey.fabled.parties.lang.PartyNodes;
-import org.bukkit.entity.Player;
 
 /**
  * Manages giving and removing scoreboards to players through MCCore

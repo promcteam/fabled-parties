@@ -1,5 +1,14 @@
 package studio.magemonkey.fabled.parties;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.Nullable;
+import studio.magemonkey.codex.mccore.config.Filter;
+import studio.magemonkey.fabled.api.enums.ExpSource;
+import studio.magemonkey.fabled.api.player.PlayerClass;
+import studio.magemonkey.fabled.api.player.PlayerData;
 import studio.magemonkey.fabled.parties.event.PartyExpEvent;
 import studio.magemonkey.fabled.parties.event.PlayerJoinPartyEvent;
 import studio.magemonkey.fabled.parties.event.PlayerLeavePartyEvent;
@@ -7,15 +16,6 @@ import studio.magemonkey.fabled.parties.inject.Server;
 import studio.magemonkey.fabled.parties.lang.IndividualNodes;
 import studio.magemonkey.fabled.parties.lang.PartyNodes;
 import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
-import studio.magemonkey.fabled.api.enums.ExpSource;
-import studio.magemonkey.fabled.api.player.PlayerClass;
-import studio.magemonkey.fabled.api.player.PlayerData;
-import studio.magemonkey.codex.mccore.config.Filter;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.OfflinePlayer;
-import org.bukkit.entity.Player;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 

@@ -26,10 +26,10 @@
  */
 package studio.magemonkey.fabled.parties;
 
-import studio.magemonkey.fabled.api.enums.ExpSource;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
+import studio.magemonkey.fabled.api.enums.ExpSource;
 
 import java.util.List;
 import java.util.UUID;

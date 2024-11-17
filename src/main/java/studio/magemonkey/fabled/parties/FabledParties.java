@@ -1,9 +1,12 @@
 package studio.magemonkey.fabled.parties;
 
-import studio.magemonkey.fabled.parties.command.*;
-import studio.magemonkey.fabled.parties.hook.Hooks;
-import studio.magemonkey.fabled.parties.hook.PlaceholderHook;
-import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
+import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
+import org.bukkit.event.HandlerList;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPluginLoader;
 import studio.magemonkey.codex.mccore.commands.CommandManager;
 import studio.magemonkey.codex.mccore.commands.ConfigurableCommand;
 import studio.magemonkey.codex.mccore.commands.SenderType;
@@ -12,13 +15,10 @@ import studio.magemonkey.codex.mccore.config.CommentedLanguageConfig;
 import studio.magemonkey.codex.mccore.config.CustomFilter;
 import studio.magemonkey.codex.mccore.config.FilterType;
 import studio.magemonkey.codex.mccore.config.parse.DataSection;
-import org.bukkit.Bukkit;
-import org.bukkit.OfflinePlayer;
-import org.bukkit.entity.Player;
-import org.bukkit.event.HandlerList;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.JavaPluginLoader;
+import studio.magemonkey.fabled.parties.command.*;
+import studio.magemonkey.fabled.parties.hook.Hooks;
+import studio.magemonkey.fabled.parties.hook.PlaceholderHook;
+import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
 
 import java.io.File;
 import java.util.ArrayList;

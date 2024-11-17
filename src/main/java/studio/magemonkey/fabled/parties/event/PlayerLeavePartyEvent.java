@@ -1,9 +1,9 @@
 package studio.magemonkey.fabled.parties.event;
 
-import studio.magemonkey.fabled.parties.Party;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import studio.magemonkey.fabled.parties.Party;
 
 public class PlayerLeavePartyEvent extends Event {
     private static final HandlerList HANDLERS = new HandlerList();

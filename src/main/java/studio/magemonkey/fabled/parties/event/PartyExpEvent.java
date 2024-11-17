@@ -1,9 +1,9 @@
 package studio.magemonkey.fabled.parties.event;
 
-import studio.magemonkey.fabled.api.enums.ExpSource;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import studio.magemonkey.fabled.api.enums.ExpSource;
 
 /**
  * Called when a party gains shared exp

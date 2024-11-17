@@ -1,16 +1,5 @@
 package studio.magemonkey.fabled.parties.testutil;
 
-import be.seeseemelk.mockbukkit.MockBukkit;
-import be.seeseemelk.mockbukkit.ServerMock;
-import be.seeseemelk.mockbukkit.entity.PlayerMock;
-import studio.magemonkey.fabled.parties.FabledParties;
-import studio.magemonkey.fabled.parties.Party;
-import studio.magemonkey.fabled.parties.inject.Server;
-import studio.magemonkey.fabled.api.classes.FabledClass;
-import studio.magemonkey.fabled.api.enums.ExpSource;
-import studio.magemonkey.fabled.api.player.PlayerClass;
-import studio.magemonkey.fabled.api.player.PlayerData;
-import studio.magemonkey.codex.mccore.commands.CommandManager;
 import lombok.extern.log4j.Log4j2;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
@@ -18,8 +7,19 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
+import org.mockbukkit.mockbukkit.MockBukkit;
+import org.mockbukkit.mockbukkit.ServerMock;
+import org.mockbukkit.mockbukkit.entity.PlayerMock;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
+import studio.magemonkey.codex.mccore.commands.CommandManager;
+import studio.magemonkey.fabled.api.classes.FabledClass;
+import studio.magemonkey.fabled.api.enums.ExpSource;
+import studio.magemonkey.fabled.api.player.PlayerClass;
+import studio.magemonkey.fabled.api.player.PlayerData;
+import studio.magemonkey.fabled.parties.FabledParties;
+import studio.magemonkey.fabled.parties.Party;
+import studio.magemonkey.fabled.parties.inject.Server;
 
 import java.util.*;
 import java.util.function.Predicate;

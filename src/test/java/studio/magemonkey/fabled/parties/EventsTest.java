@@ -1,14 +1,14 @@
 package studio.magemonkey.fabled.parties;
 
-import be.seeseemelk.mockbukkit.entity.PlayerMock;
-import studio.magemonkey.fabled.parties.testutil.MockedTest;
-import studio.magemonkey.fabled.parties.inject.Server;
-import studio.magemonkey.fabled.api.enums.ExpSource;
-import studio.magemonkey.fabled.api.event.PlayerExperienceGainEvent;
-import studio.magemonkey.fabled.api.player.PlayerData;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockbukkit.mockbukkit.entity.PlayerMock;
+import studio.magemonkey.fabled.api.enums.ExpSource;
+import studio.magemonkey.fabled.api.event.PlayerExperienceGainEvent;
+import studio.magemonkey.fabled.api.player.PlayerData;
+import studio.magemonkey.fabled.parties.inject.Server;
+import studio.magemonkey.fabled.parties.testutil.MockedTest;
 
 import static org.mockito.Mockito.*;
 

@@ -1,12 +1,12 @@
 package studio.magemonkey.fabled.parties.command;
 
-import studio.magemonkey.codex.mccore.commands.ConfigurableCommand;
-import studio.magemonkey.codex.mccore.commands.IFunction;
-import studio.magemonkey.fabled.parties.FabledParties;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+import studio.magemonkey.codex.mccore.commands.ConfigurableCommand;
+import studio.magemonkey.codex.mccore.commands.IFunction;
+import studio.magemonkey.fabled.parties.FabledParties;
 
 /**
  * Command to reload the plugin's config.yml and language.yml

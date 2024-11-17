@@ -1,12 +1,12 @@
 package studio.magemonkey.fabled.parties.mccore;
 
+import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
 import studio.magemonkey.codex.mccore.scoreboard.StatHolder;
 import studio.magemonkey.fabled.parties.FabledParties;
 import studio.magemonkey.fabled.parties.Party;
 import studio.magemonkey.fabled.parties.inject.Server;
-import org.bukkit.Bukkit;
-import org.bukkit.OfflinePlayer;
-import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -26,10 +26,10 @@
  */
 package studio.magemonkey.fabled.parties.hook;
 
-import studio.magemonkey.fabled.parties.FabledParties;
-import studio.magemonkey.fabled.parties.IParty;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import studio.magemonkey.fabled.parties.FabledParties;
+import studio.magemonkey.fabled.parties.IParty;
 
 public class Hooks {
     private static FabledParties fabledParties;
