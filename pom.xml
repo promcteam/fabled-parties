@@ -16,7 +16,7 @@
 
     <name>FabledParties</name>
     <description>A Parties extension for Fabled</description>
-    <url>https://github.com/promcteam/fabled-parties</url>
+    <url>https://github.com/magemonkeystudio/fabled-parties</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -114,9 +114,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/promcteam/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:ssh://github.com:promcteam/${project.artifactId}.git</developerConnection>
-        <url>https://github.com/promcteam/${project.artifactId}</url>
+        <connection>scm:git:git://github.com/magemonkeystudio/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:ssh://github.com:magemonkeystudio/${project.artifactId}.git</developerConnection>
+        <url>https://github.com/magemonkeystudio/${project.artifactId}</url>
     </scm>
 
     <distributionManagement>
