@@ -81,6 +81,9 @@ public class PlaceholderHook extends PlaceholderExpansion {
                 case "size": {
                     return String.valueOf(party.getMembers().size());
                 }
+                case "maxsize": {
+                    return String.valueOf(plugin.getMaxSize());
+                }
                 case "name": {
                     return Bukkit.getOfflinePlayer(party.getMembers().get(Integer.parseInt(args[1]) - 1)).getName();
                 }
