@@ -15,7 +15,11 @@ import studio.magemonkey.codex.mccore.config.CommentedLanguageConfig;
 import studio.magemonkey.codex.mccore.config.CustomFilter;
 import studio.magemonkey.codex.mccore.config.FilterType;
 import studio.magemonkey.codex.mccore.config.parse.DataSection;
+import studio.magemonkey.fabled.Fabled;
+import studio.magemonkey.fabled.api.SkillPlugin;
+import studio.magemonkey.fabled.dynamic.custom.CustomEffectComponent;
 import studio.magemonkey.fabled.parties.command.*;
+import studio.magemonkey.fabled.parties.components.PartyTarget;
 import studio.magemonkey.fabled.parties.hook.Hooks;
 import studio.magemonkey.fabled.parties.hook.PlaceholderHook;
 import studio.magemonkey.fabled.parties.mccore.PartyBoardManager;
@@ -29,8 +33,9 @@ import java.util.Random;
 /**
  * Add-on plugin for Fabled allowing parties with shared experience
  */
-public class FabledParties extends JavaPlugin {
-    public static final Random RNG = new Random();
+public class FabledParties extends JavaPlugin implements SkillPlugin {
+    public static final Random        RNG = new Random();
+    private static      FabledParties inst;
 
     private final List<Party>             parties     = new ArrayList<>();
     private final List<Party>             partiesRead = Collections.unmodifiableList(parties);
@@ -56,10 +61,16 @@ public class FabledParties extends JavaPlugin {
 
     public FabledParties() {
         super();
+        inst = this;
     }
 
     public FabledParties(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
         super(loader, description, dataFolder, file);
+        inst = this;
+    }
+
+    public static FabledParties inst() {
+        return inst;
     }
 
     /**
@@ -74,6 +85,16 @@ public class FabledParties extends JavaPlugin {
         new PartyListener(this);
 
         // Set up commands
+        registerCommands();
+
+        Hooks.init(this);
+        if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            new PlaceholderHook(this).register();
+            getLogger().info("Hooked to PlaceholderAPI");
+        }
+    }
+
+    private void registerCommands() {
         ConfigurableCommand root = new ConfigurableCommand(this, "pt", SenderType.ANYONE);
         root.addSubCommands(
                 new ConfigurableCommand(this,
@@ -134,12 +155,6 @@ public class FabledParties extends JavaPlugin {
                         PermissionNode.RELOAD)
         );
         CommandManager.registerCommand(root);
-
-        Hooks.init(this);
-        if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
-            new PlaceholderHook(this).register();
-            getLogger().info("Hooked to PlaceholderAPI");
-        }
     }
 
     public void loadConfiguration() {
@@ -396,5 +411,18 @@ public class FabledParties extends JavaPlugin {
      */
     public void sendMessage(Player target, String key, CustomFilter... filters) {
         language.sendMessage(key, target, FilterType.COLOR, filters);
+    }
+
+    @Override
+    public void registerSkills(Fabled api) {
+    }
+
+    @Override
+    public void registerClasses(Fabled api) {
+    }
+
+    @Override
+    public List<CustomEffectComponent> getComponents() {
+        return List.of(new PartyTarget());
     }
 }

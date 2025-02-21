@@ -21,6 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>wwuHHmm</maven.build.timestamp.format>
+        <fabled.version>1.0.4-R0.30-SNAPSHOT</fabled.version>
     </properties>
 
     <build>
