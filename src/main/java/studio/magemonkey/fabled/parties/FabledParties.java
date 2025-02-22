@@ -1,5 +1,6 @@
 package studio.magemonkey.fabled.parties;
 
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
@@ -51,6 +52,8 @@ public class FabledParties extends JavaPlugin implements SkillPlugin {
     private       boolean                 partyAlly;
     private       boolean                 useScoreboard;
     private       boolean                 levelScoreboard;
+    @Getter
+    private       boolean                 shareCmdExp;
     private       boolean                 debug;
     private       double                  expShareRadius;
     private       double                  expShareRadiusSq;
@@ -189,6 +192,7 @@ public class FabledParties extends JavaPlugin implements SkillPlugin {
         friendlyFire = settings.getBoolean("friendly-fire", true);
         useScoreboard = settings.getBoolean("use-scoreboard", false);
         levelScoreboard = settings.getBoolean("level-scoreboard", false);
+        shareCmdExp = settings.getBoolean("share-cmd-exp", false);
         expShareRadius = settings.getDouble("exp-modifications.radius", 0);
         expShareRadiusSq = expShareRadius > 0 ? Math.pow(expShareRadius, 2) : expShareRadius;
         memberModifier = settings.getDouble("exp-modifications.members", 1.0);

@@ -30,6 +30,9 @@ only-leader-invites: true
 # Whether levels are shown in the scoreboard over health
 level-scoreboard: false
 
+# Whether to share experience gained via commands
+share-cmd-exp: false
+
 # Modifications to experience gained
 exp-modifications:
 
