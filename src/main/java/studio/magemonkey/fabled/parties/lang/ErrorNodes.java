@@ -19,10 +19,12 @@ public class ErrorNodes {
      ***********************/
 
     NO_INVITE_SELF         = BASE + "no-invite-self",
+            NO_KICK_SELF   = BASE + "no-kick-self",
             NO_INVITES     = BASE + "no-invites",
             NO_PARTY       = BASE + "no-party",
             NOT_ONLINE     = BASE + "not-online",
             NOT_LEADER     = BASE + "not-leader",
             IN_OTHER_PARTY = BASE + "in-other-party",
+            NOT_IN_PARTY   = BASE + "not-in-party",
             PARTY_FULL     = BASE + "party-full";
 }

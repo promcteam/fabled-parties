@@ -18,11 +18,13 @@ public class IndividualNodes {
      Individual Value Keys
      ***********************/
 
-    CHAT_ON             = BASE + "chat-on",
-            CHAT_OFF    = BASE + "chat-off",
-            DECLINED    = BASE + "declined",
-            NO_RESPONSE = BASE + "no-response",
-            INVITED     = BASE + "invited",
-            INFO        = BASE + "info";
+    CHAT_ON               = BASE + "chat-on",
+            CHAT_OFF      = BASE + "chat-off",
+            DECLINED      = BASE + "declined",
+            NO_RESPONSE   = BASE + "no-response",
+            INVITED       = BASE + "invited",
+            PLAYER_KICKED = BASE + "player-kicked",
+            KICKED        = BASE + "kicked",
+            INFO          = BASE + "info";
 
 }

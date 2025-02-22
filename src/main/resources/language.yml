@@ -16,6 +16,8 @@ Individual:
   invited:
     - '&2You have been invited to join &6{player}s &2party'
     - '&2Type &6/pt accept &2to join or &6/pt decline &2to decline'
+  player-kicked: '&6{player} &2was kicked from the party'
+  kicked: '&2You have been kicked from the party'
   info:
     - '&8{break}'
     - '&2Leader: &6{leader}'
@@ -25,8 +27,10 @@ Individual:
 
 Errors:
   no-invite-self: '&4You cannot invite yourself'
+  no-kick-self: '&4You cannot kick yourself'
   no-invites: '&4You have no pending invitations'
   no-party: '&4You are not a member of a party'
+  not-in-party: '&4That player is not in your party'
   not-online: '&4That player is not online'
   not-leader: '&4You are not the party leader'
   in-other-party: '&4That player is already in another party'
