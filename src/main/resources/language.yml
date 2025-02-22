@@ -11,6 +11,7 @@ Party:
 Individual:
   chat-on: '&2Party chat has been toggled on'
   chat-off: '&2Party chat has been toggled off'
+  party-leader: '&2The party leader is &6{player}'
   declined: '&2You have declined the party invitation'
   no-response: '&4You did not respond to the invitation'
   invited:

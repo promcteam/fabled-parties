@@ -304,6 +304,15 @@ public class Party implements IParty {
                 });
     }
 
+    public void changeLeader(Player newLeader) {
+        if (!isMember(newLeader) || isLeader(newLeader)) return;
+
+        leaderId = newLeader.getUniqueId();
+        sendMessages(plugin.getMessage(PartyNodes.NEW_LEADER,
+                true,
+                Filter.PLAYER.setReplacement(newLeader.getName())));
+    }
+
     /**
      * Removes scoreboards for the party
      */
